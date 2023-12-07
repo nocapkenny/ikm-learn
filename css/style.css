@@ -7,6 +7,10 @@ body{
     color: #1b1b1b;
     height: 100%;
 }
+.main__box-text span{
+    font-weight: 700;
+    border-top: 2px solid #ffa31a;
+}
 .container{
     width: 1280px;
     padding: 0 15px;
@@ -106,14 +110,36 @@ body{
     background: #1b1b1b;
     color: #fff;
 }
-.footer__inner{
-    margin-top: 21vh;
-}
-.footer__text{
+.main__box{
     text-align: center;
-    color: #1b1b1b;
-    font-size: 14px;
 }
+.main__box-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.main__box-img{
+    width: 35px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.main__box-text{
+    text-align: left;
+    background-color: #292929;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: -7px 4px 100px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    display: none;
+}
+.main__box-text--active{
+    display: block;
+}
+
 
 
 
