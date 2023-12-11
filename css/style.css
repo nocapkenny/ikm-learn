@@ -63,6 +63,9 @@ body{
     background-color: #292929;
     margin-bottom: 10px;
 }
+.main__question{
+    width: 900px;
+}
 .main__title,
 .main__score,
 .main__result{
