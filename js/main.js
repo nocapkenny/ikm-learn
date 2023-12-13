@@ -1,6 +1,6 @@
 
 //МАССИВ
-const questions = [
+const questionsList = [
     {
         question: "Что такое LA? В каких единицах измеряется?",
         answers: ["LA (load average) — параметр, определяющий среднюю нагрузку на систему за период времени (1 мин, 5 минут, 15 минут). Измеряется в количестве задач на одно ядро процессора",
@@ -770,6 +770,22 @@ q — выход из программы
     },
     
 ];
+//Генерация 10 случайных вопросов
+function randGen(){
+    let randNumsArr = [];
+    while(randNumsArr.length < 10){
+       let randNum = Math.floor(Math.random() * 50);
+       if (!randNumsArr.includes(randNum)){
+         randNumsArr.push(randNum);
+       }
+    }
+    return randNumsArr;
+ }
+ const rand = randGen();
+ const questions = [];
+ for (i = 0; i < 10; i++){
+    questions.push(questionsList[rand[i]]);
+ }
 
 
 
